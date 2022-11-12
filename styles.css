@@ -5,12 +5,21 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.beholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212e4a;
+  width: 575px;
 }
 
 .container {
   display: flex;
   justify-content: space-around;
-  background-color: #111827;
+  background-color: #212e4a;
   height: 425px;
   width: 575px;
   color: rgb(255, 248, 248);
@@ -21,6 +30,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.team-name {
+  font-size: 40px;
+  margin-bottom: 16px;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
 
 .score {
@@ -41,7 +57,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 25px;
   width: 150px;
 }
 
@@ -57,6 +73,7 @@ button {
   color: lightgray;
   text-align: center;
   transition: transform(0.05s);
+  padding: 2px 0px 0px 0px;
 }
 
 button:active {
@@ -67,4 +84,9 @@ button:active {
   text-shadow: 0 0 1px rgb(187, 73, 73), 0 0 7px rgb(243, 195, 195),
     0 0 10px rgb(252, 187, 187), 0 0 30px rgb(247, 26, 26),
     0 0 37px rgb(238, 33, 33), 0 0 45px rgb(219, 34, 34);
+}
+
+#reset {
+  width: 80px;
+  margin-bottom: 20px;
 }
