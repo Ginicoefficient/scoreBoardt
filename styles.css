@@ -1,0 +1,70 @@
+@font-face {
+  font-family: scoreBoard;
+  src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #111827;
+  height: 425px;
+  width: 575px;
+  color: rgb(255, 248, 248);
+  font-size: 26px;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  background-color: #4f457e;
+  color: rgb(253, 201, 201);
+  border-radius: 5px;
+  padding: 0px 20px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  font-family: scoreBoard;
+  font-size: 50px;
+}
+
+.score-btns {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 150px;
+}
+
+button {
+  font-family: scoreBoard;
+  font-size: 14px;
+  width: 40px;
+  height: 35px;
+  margin: 1px;
+  border-radius: 4px;
+  border: 2px solid lightgray;
+  background-color: #4f457e;
+  color: lightgray;
+  text-align: center;
+  transition: transform(0.05s);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.neon {
+  text-shadow: 0 0 1px rgb(187, 73, 73), 0 0 7px rgb(243, 195, 195),
+    0 0 10px rgb(252, 187, 187), 0 0 30px rgb(247, 26, 26),
+    0 0 37px rgb(238, 33, 33), 0 0 45px rgb(219, 34, 34);
+}
